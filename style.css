@@ -1,0 +1,182 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+  color:white;
+  line-height:1.6;
+}
+
+/* NAVBAR */
+header{
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#00adb5;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:60px;
+  background: linear-gradient(90deg, #00adb5, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+  margin-top:15px;
+  font-size:22px;
+  opacity:0.8;
+}
+
+.hero button{
+  margin-top:25px;
+  padding:12px 25px;
+  border:none;
+  background:#00adb5;
+  color:white;
+  cursor:pointer;
+  border-radius:30px;
+  transition:0.3s;
+}
+
+.hero button:hover{
+  transform:scale(1.05);
+}
+
+/* SECTIONS */
+section{
+  padding:80px 10%;
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:32px;
+}
+
+/* SKILLS */
+.skills-container{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.skill{
+  background:#222;
+  padding:15px 25px;
+  border-radius:20px;
+  border:1px solid #00adb5;
+}
+
+/* PROJECTS */
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.project-card{
+  background:#1f1f1f;
+  padding:20px;
+  border-radius:15px;
+  transition:0.3s;
+  border:1px solid transparent;
+}
+
+.project-card:hover{
+  transform:translateY(-5px);
+  border:1px solid #00adb5;
+}
+
+.project-card img{
+  width:100%;
+  border-radius:10px;
+}
+
+.project-card h3{
+  margin-top:15px;
+}
+
+.project-card a{
+  display:inline-block;
+  margin-top:10px;
+  color:#00adb5;
+}
+
+/* CONTACT */
+form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+}
+
+form input,
+form textarea{
+  margin-bottom:15px;
+  padding:12px;
+  border:none;
+  border-radius:8px;
+  outline:none;
+}
+
+form button{
+  padding:12px;
+  border:none;
+  background:#00adb5;
+  color:white;
+  cursor:pointer;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+form button:hover{
+  background:#008b94;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#111;
+  margin-top:40px;
+}
